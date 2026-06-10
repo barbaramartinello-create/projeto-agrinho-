@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solos: A Base da Vida</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav class="navbar">
+            <h1>🌱 Solos</h1>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#laboratorio">Laboratório</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#importancia">Importância</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <h2>O Solo é a Base da Vida</h2>
+
+            <p>
+                Descubra os diferentes tipos de solos, sua importância
+                para a agricultura e para o equilíbrio ambiental.
+            </p>
+
+            <a href="#tipos" class="btn">
+                Explorar
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- TIPOS DE SOLO -->
+    <section id="tipos" class="section">
+
+        <h2>Tipos de Solo</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="imagens/solo-arenoso.jpg" alt="Solo Arenoso">
+
+                <h3>Solo Arenoso</h3>
+
+                <p>
+                    Possui grãos maiores e pouca retenção de água.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/solo-argiloso.jpg" alt="Solo Argiloso">
+
+                <h3>Solo Argiloso</h3>
+
+                <p>
+                    Rico em nutrientes e com maior retenção de água.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/solo-humoso.jpg" alt="Solo Humoso">
+
+                <h3>Solo Humoso</h3>
+
+                <p>
+                    Muito fértil por conter matéria orgânica.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/solo-calcario.jpg" alt="Solo Calcário">
+
+                <h3>Solo Calcário</h3>
+
+                <p>
+                    Rico em minerais e utilizado na correção da acidez.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LABORATÓRIO -->
+    <section id="laboratorio" class="section laboratorio">
+
+        <h2>Laboratório Interativo</h2>
+
+        <p>
+            Escolha um tipo de solo para visualizar suas características.
+        </p>
+
+        <select id="soloSelect">
+
+            <option value="">Selecione um solo</option>
+
+            <option value="arenoso">Solo Arenoso</option>
+
+            <option value="argiloso">Solo Argiloso</option>
+
+            <option value="humoso">Solo Humoso</option>
+
+            <option value="calcario">Solo Calcário</option>
+
+        </select>
+
+        <div id="resultadoSolo">
+
+            <h3>Informações do Solo</h3>
+
+            <p>Selecione um solo acima.</p>
+
+        </div>
+
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="section">
+
+        <h2>Quiz dos Solos</h2>
+
+        <div class="quiz-box">
+
+            <h3>
+                Qual solo possui maior quantidade de matéria orgânica?
+            </h3>
+
+            <button onclick="verificarResposta('a')">
+                Solo Arenoso
+            </button>
+
+            <button onclick="verificarResposta('b')">
+                Solo Humoso
+            </button>
+
+            <button onclick="verificarResposta('c')">
+                Solo Calcário
+            </button>
+
+            <p id="resultadoQuiz"></p>
+
+        </div>
+
+    </section>
+
+    <!-- IMPORTÂNCIA -->
+    <section id="importancia" class="section">
+
+        <h2>Por Que o Solo é Importante?</h2>
+
+        <div class="importancia-grid">
+
+            <div class="bloco">
+                <h3>🌾 Agricultura</h3>
+
+                <p>
+                    O solo fornece nutrientes essenciais para o cultivo
+                    dos alimentos.
+                </p>
+            </div>
+
+            <div class="bloco">
+                <h3>💧 Água</h3>
+
+                <p>
+                    Atua na infiltração e armazenamento da água da chuva.
+                </p>
+            </div>
+
+            <div class="bloco">
+                <h3>🌳 Meio Ambiente</h3>
+
+                <p>
+                    Abriga organismos importantes para o equilíbrio
+                    ecológico.
+                </p>
+            </div>
+
+            <div class="bloco">
+                <h3>🐞 Biodiversidade</h3>
+
+                <p>
+                    Milhares de espécies vivem e dependem do solo.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CURIOSIDADES -->
+    <section class="section curiosidades">
+
+        <h2>Curiosidades</h2>
+
+        <div class="curiosidade-box">
+
+            <div>
+                <span class="numero">95%</span>
+                <p>dos alimentos dependem diretamente do solo.</p>
+            </div>
+
+            <div>
+                <span class="numero">100+</span>
+                <p>anos podem ser necessários para formar 1 cm de solo.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h3>Projeto Agrinho 2025</h3>
+
+        <p>
+            Solos: A Base da Vida
+        </p>
+
+        <p>
+            Desenvolvido para conscientizar sobre a importância da
+            preservação dos solos.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
