@@ -1,0 +1,308 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5e6ca;
+    color:#333;
+}
+
+/* MENU */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:rgba(46,125,50,0.95);
+    backdrop-filter:blur(5px);
+}
+
+.navbar h1{
+    color:white;
+    font-size:1.8rem;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#ffd54f;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),
+    url('imagens/fundo-solo.jpg');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    color:white;
+    max-width:700px;
+}
+
+.hero h2{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ffc107;
+    color:#222;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    background:#ffb300;
+}
+
+/* SEÇÕES */
+
+.section{
+    padding:100px 8%;
+}
+
+.section h2{
+    text-align:center;
+    font-size:2.8rem;
+    color:#2e7d32;
+    margin-bottom:50px;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    color:#6d4c41;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* LABORATÓRIO */
+
+.laboratorio{
+    text-align:center;
+    background:#fff8e1;
+}
+
+#soloSelect{
+    padding:12px;
+    width:300px;
+    max-width:90%;
+    border-radius:10px;
+    border:none;
+    margin:20px 0;
+    font-size:1rem;
+}
+
+#resultadoSolo{
+    max-width:600px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* QUIZ */
+
+.quiz-box{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.quiz-box h3{
+    margin-bottom:25px;
+}
+
+.quiz-box button{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#2e7d32;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.quiz-box button:hover{
+    background:#1b5e20;
+}
+
+#resultadoQuiz{
+    margin-top:20px;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+/* IMPORTÂNCIA */
+
+.importancia-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.bloco{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.bloco h3{
+    margin-bottom:10px;
+    color:#6d4c41;
+}
+
+/* CURIOSIDADES */
+
+.curiosidades{
+    background:#2e7d32;
+    color:white;
+}
+
+.curiosidades h2{
+    color:white;
+}
+
+.curiosidade-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:50px;
+}
+
+.curiosidade-box div{
+    text-align:center;
+}
+
+.numero{
+    display:block;
+    font-size:4rem;
+    font-weight:bold;
+    color:#ffd54f;
+}
+
+/* FOOTER */
+
+footer{
+    background:#4e342e;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h2{
+        font-size:2.5rem;
+    }
+
+    .section{
+        padding:80px 5%;
+    }
+}
